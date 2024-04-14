@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclat Input</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Eclat Input</h1>
+        <label for="inputItems">Enter transactions separated by new lines and items separated by commas (,):</label>
+        <textarea id="inputItems" rows="4" cols="50"></textarea>
+        
+        <label for="supportThreshold">Minimum Support Threshold:</label>
+        <input type="number" id="supportThreshold" placeholder="Enter minimum support threshold" min="1" value="2">
+
+        <button onclick="calculateEclat()">Calculate</button>
+
+        <h2>Output</h2>
+        <div id="output"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
